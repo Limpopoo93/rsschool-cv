@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Plants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="header-wrapper">
+    <div class="logo-wrapper">
+      <div class="logo"></div>
+      <span>Plats</span>
+    </div>
+    <a onclick="openMenu();" class="mobile-navigation-menu"><i></i></a>
+    <nav id="mobileNavigationMenu" class="mobile-navigation" role="navigation">
+      <ul>
+        <li><a onclick="openMenu();" class="home-navigation" href="#welcome">Home</a></li>
+        <li><a onclick="openMenu();" href="#about">About us</a></li>
+        <li><a onclick="openMenu();" href="#service">Service</a></li>
+        <li><a onclick="openMenu();" href="#price">Price</a></li>
+        <li><a onclick="openMenu();" href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <nav class="navigation-menu-desktop" role="navigation">
+      <ul>
+        <li><a class="home-navigation" href="#welcome">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#price">Price</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="welcome" class="welcome-section">
+  <div class="welcome-section-wrapper">
+    <div class="welcome-section-image"></div>
+
+    <div class="info-welcome-section">
+      <h1>We grow <span>plants</span> and give you oxygen</h1>
+      <div class="info-welcome-text">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+      </div>
+      <button id="btnLearnMore" class="info-welcome-btn" onclick="upBtnLearnMore();">
+        LEARN MORE
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about-section-wrapper">
+    <div class="about-info">
+      <div class="about-experience">
+        We are <span>professional experienced</span> gardeners
+      </div>
+      <div class="about-description">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.
+      </div>
+    </div>
+    <div class="about-picture"></div>
+  </div>
+</section>
+
+<section id="service" class="service-section">
+  <div class="service-btn-wrapper">
+    <span class="service-header">Service and our projects</span>
+    <div class="btn-wrapper">
+      <button id="gardensActive" onclick="searchMenu('gardens');" class="btn-service">Gardens</button>
+      <button id="lawnActive" onclick="searchMenu('lawn');" class="btn-service">Lawn</button>
+      <button id="plantingActive" onclick="searchMenu('planting');" class="btn-service">Planting</button>
+    </div>
+  </div>
+
+  <div class="picture-service-wrapper">
+    <div id="gardens" class="picture-wrapper">
+      <div class="image-service picture-4"></div>
+      <div class="image-description">
+        <h4 class="image-header">Garden care</h4>
+        <span class="image-body">Lorem Ipsum has been the industry</span>
+      </div>
+    </div>
+
+    <div id="planting" class="picture-wrapper">
+      <div class="image-service picture-5"></div>
+      <div class="image-description">
+        <h4 class="image-header">Planting</h4>
+        <span class="image-body">Lorem Ipsum has been the industry</span>
+      </div>
+    </div>
+
+    <div id="lawn" class="picture-wrapper">
+      <div class="image-service picture-6"></div>
+      <div class="image-description">
+        <h4 class="image-header">Lawn care</h4>
+        <span class="image-body">Lorem Ipsum has been the industry</span>
+      </div>
+    </div>
+
+    <div id="planting1" class="picture-wrapper">
+      <div class="image-service picture-7"></div>
+      <div class="image-description">
+        <h4 class="image-header">Planting</h4>
+        <span class="image-body">Lorem Ipsum has been the industry</span>
+      </div>
+    </div>
+
+    <div id="gardens1" class="picture-wrapper">
+      <div class="image-service picture-8"></div>
+      <div class="image-description">
+        <h4 class="image-header">Garden care</h4>
+        <span class="image-body">Lorem Ipsum has been the industry</span>
+      </div>
+    </div>
+
+    <div id="planting2" class="picture-wrapper">
+      <div class="image-service picture-9"></div>
+      <div class="image-description">
+        <h4 class="image-header">Planting</h4>
+        <span class="image-body">Lorem Ipsum has been the industry</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="price-section-wrapper">
+    <div class="left-section-price-wrapper-mobile">
+      <h3 class="price-header">Prices</h3>
+      <div class="type-prices-menu-wrapper">
+        <div id="basicPriceBtn" class="type-prices-btn" onclick="openBasicMenu();">
+          <span>Basics</span>
+          <div id="basicPricesImage" class="type-prices-image"></div>
+        </div>
+
+        <div id="standardPriceBtn" class="type-prices-btn" onclick="openStandardMenu();">
+          <span>Standard</span>
+          <div id="standardPricesImage" class="type-prices-image"></div>
+        </div>
+
+        <div id="proPriceBtn" class="type-prices-btn" onclick="openProMenu();">
+          <span>Pro</span>
+          <div id="proPricesImage" class="type-prices-image"></div>
+        </div>
+      </div>
+    </div>
+    <div class="right-section-price-wrapper">
+      <h3 class="right-section-header">
+        Our best <span>gardeners</span> are ready to help you
+      </h3>
+      <button class="btn-service contacts-color">Contact us</button>
+      <div class="gardeners-image"></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" class="contacts-section">
+  <div class="contacts-section-wrapper">
+    <div id="contactsPhoto" class="contacts-photo"></div>
+    <div class="contacts-header">Contact us</div>
+    <div class="contacts-town-wrapper">
+      <div id="contactsTown" class="contacts-town" onclick="openCityMenu();">
+        <span id="changeCity">City</span>
+        <div id="contactsImage" class="contacts-image"></div>
+      </div>
+
+      <div id="townInfoWrapper" class="town-info-wrapper">
+        <div class="town-personal-info-wrapper">
+          <div class="town-personal-info">
+            <span>City:</span>
+            <span>Phone:</span>
+            <span class="town-personal-info-office">Office address:</span>
+          </div>
+          <div class="town-info-description">
+            <span id="city"></span>
+            <span id="phone"></span>
+            <span id="officeAddress" class="town-personal-info-office"></span>
+          </div>
+        </div>
+        <button class="town-info-btn">Call us</button>
+      </div>
+
+      <div id="listTownWrapper" class="list-town-wrapper">
+        <div id="townCanandaiqua" onclick="changeCanandaiqua();">Canandaigua, NY</div>
+        <div id="townNewYork" onclick="changeNewYork();">New York City</div>
+        <div id="townYonkers" onclick="changeYonkers();">Yonkers, NY</div>
+        <div id="townSherrill" onclick="changeSherill();">Sherrill, NY</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="web-footer">
+  <div class="git-wrapper">
+    <span class="git-logo"></span>
+    <span class="git-year">2022</span>
+    <span class="git-info">github</span>
+  </div>
+  <div class="rolling-school-wrapper">
+    Rolling Scopes School
+  </div>
+  <div class="media-wrapper">
+    <div class="inst-image"></div>
+    <div class="face-image"></div>
+    <div class="twit-image"></div>
+    <div class="cvt-image"></div>
+  </div>
+</footer>
+</body>
+</html>
+<script type="application/javascript">
+  function changeNameCity(nameCity) {
+    let item1 = document.getElementById("changeCity");
+    item1.innerText = nameCity;
+  }
+
+  function changeCanandaiqua() {
+    let item1 = document.getElementById("townCanandaiqua");
+    item1.style.color = "#717171";
+    let city = document.getElementById("city");
+    city.innerText = "Canandaigua, NY";
+    let phone = document.getElementById("phone");
+    phone.innerText = "+1 585 393 0001";
+    let officeAddress = document.getElementById("officeAddress");
+    officeAddress.innerText = "151 Charlotte Street";
+    let item3 = document.getElementById("townInfoWrapper");
+    item3.style.display = "block";
+    let item4 = document.getElementById("listTownWrapper");
+    item4.style.display = "none";
+    let item5 = document.getElementById("contactsImage");
+    let item6 = document.getElementById("contactsTown");
+    item5.style.transform = "rotate(180deg)";
+    item6.style.backgroundColor = "#D6E7D2";
+    changeNameCity("Canandaigua, NY");
+    let item7 = document.getElementById("townNewYork");
+    let item8 = document.getElementById("townYonkers");
+    let item9 = document.getElementById("townSherrill");
+    item7.style.color = "#499A18";
+    item8.style.color = "#499A18";
+    item9.style.color = "#499A18";
+  }
+
+  function changeNewYork() {
+    let item1 = document.getElementById("townNewYork");
+    item1.style.color = "#717171";
+    let city = document.getElementById("city");
+    city.innerText = "New York City";
+    let phone = document.getElementById("phone");
+    phone.innerText = "+1 212 456 0002";
+    let officeAddress = document.getElementById("officeAddress");
+    officeAddress.innerText = "9 East 91st Street";
+    let item3 = document.getElementById("townInfoWrapper");
+    item3.style.display = "block";
+    let item4 = document.getElementById("listTownWrapper");
+    item4.style.display = "none";
+    let item5 = document.getElementById("contactsImage");
+    let item6 = document.getElementById("contactsTown");
+    item5.style.transform = "rotate(180deg)";
+    item6.style.backgroundColor = "#D6E7D2";
+    changeNameCity("New York City");
+    let item7 = document.getElementById("townCanandaiqua");
+    let item8 = document.getElementById("townYonkers");
+    let item9 = document.getElementById("townSherrill");
+    item7.style.color = "#499A18";
+    item8.style.color = "#499A18";
+    item9.style.color = "#499A18";
+  }
+
+  function changeYonkers() {
+    let item1 = document.getElementById("townYonkers");
+    item1.style.color = "#717171";
+    let city = document.getElementById("city");
+    city.innerText = "Yonkers, NY";
+    let phone = document.getElementById("phone");
+    phone.innerText = "+1 914 678 0003";
+    let officeAddress = document.getElementById("officeAddress");
+    officeAddress.innerText = "511 Warburton Ave";
+    let item3 = document.getElementById("townInfoWrapper");
+    item3.style.display = "block";
+    let item4 = document.getElementById("listTownWrapper");
+    item4.style.display = "none";
+    let item5 = document.getElementById("contactsImage");
+    let item6 = document.getElementById("contactsTown");
+    item5.style.transform = "rotate(180deg)";
+    item6.style.backgroundColor = "#D6E7D2";
+    changeNameCity("Yonkers, NY");
+    let item7 = document.getElementById("townCanandaiqua");
+    let item8 = document.getElementById("townNewYork");
+    let item9 = document.getElementById("townSherrill");
+    item7.style.color = "#499A18";
+    item8.style.color = "#499A18";
+    item9.style.color = "#499A18";
+  }
+
+  function changeSherill() {
+    let item1 = document.getElementById("townSherrill");
+    item1.style.color = "#717171";
+    let city = document.getElementById("city");
+    city.innerText = "Sherrill, NY";
+    let phone = document.getElementById("phone");
+    phone.innerText = "+1 315 908 0004";
+    let officeAddress = document.getElementById("officeAddress");
+    officeAddress.innerText = "14 WEST Noyes BLVD";
+    let item3 = document.getElementById("townInfoWrapper");
+    item3.style.display = "block";
+    let item4 = document.getElementById("listTownWrapper");
+    item4.style.display = "none";
+    let item5 = document.getElementById("contactsImage");
+    let item6 = document.getElementById("contactsTown");
+    item5.style.transform = "rotate(180deg)";
+    item6.style.backgroundColor = "#D6E7D2";
+    changeNameCity("Sherrill, NY");
+    let item7 = document.getElementById("townCanandaiqua");
+    let item8 = document.getElementById("townNewYork");
+    let item9 = document.getElementById("townYonkers");
+    item7.style.color = "#499A18";
+    item8.style.color = "#499A18";
+    item9.style.color = "#499A18";
+  }
+
+  function openCityMenu() {
+    let item1 = document.getElementById("contactsImage");
+    let item2 = document.getElementById("contactsTown");
+    let item3 = document.getElementById("townInfoWrapper");
+    let item4 = document.getElementById("listTownWrapper");
+    let item5 = document.getElementById("changeCity");
+
+    if (item3.style.display === "none") {
+      item5.innerText = "City";
+      let item6 = document.getElementById("townCanandaiqua");
+      let item7 = document.getElementById("townNewYork");
+      let item8 = document.getElementById("townYonkers");
+      let item9 = document.getElementById("townSherrill");
+      item6.style.color = "#499A18";
+      item7.style.color = "#499A18";
+      item8.style.color = "#499A18";
+      item9.style.color = "#499A18";
+    }
+
+    if (item4.style.display === "block") {
+      item3.style.display = "none";
+    } else {
+      item3.style.display = "block";
+    }
+
+    if (item1.style.transform === "rotate(180deg)") {
+      item1.style.transform = "rotate(360deg)";
+      item2.style.backgroundColor = "#C1E698";
+      item4.style.display = "none";
+    } else {
+      item1.style.transform = "rotate(180deg)";
+      item2.style.backgroundColor = "#D6E7D2";
+      item4.style.display = "block";
+    }
+
+    if (item3.style.display === "block") {
+      item4.style.display = "block";
+      item3.style.display = "none";
+    } else {
+      item4.style.display = "none";
+    }
+  }
+
+  function upBtnLearnMore() {
+    if (document.getElementById("btnLearnMore").style.backgroundColor === "rgb(224, 103, 51)") {
+      document.getElementById("btnLearnMore").style.backgroundColor = "#EDF2EC";
+      document.getElementById("btnLearnMore").style.color = "#000000";
+    } else {
+      document.getElementById("btnLearnMore").style.backgroundColor = "#E06733";
+      document.getElementById("btnLearnMore").style.color = "#FFFFFF";
+    }
+  }
+
+  function searchMenu(typeMenu) {
+    if (typeMenu === 'gardens' && document.getElementById("gardens").style.filter !== "blur(2px)") {
+      document.getElementById("gardens").style.filter = "blur(2px)";
+      document.getElementById("gardens1").style.filter = "blur(2px)";
+      document.getElementById("gardensActive").style.backgroundColor = "#E06733";
+      document.getElementById("gardensActive").style.color = "#FFFFFF";
+    } else {
+      document.getElementById("gardens").style.filter = "blur(0px)";
+      document.getElementById("gardens1").style.filter = "blur(0px)";
+      document.getElementById("gardensActive").style.backgroundColor = "#EDF2EC";
+      document.getElementById("gardensActive").style.color = "#E06733";
+    }
+
+    if (typeMenu === 'lawn' && document.getElementById("lawn").style.filter !== "blur(2px)") {
+      document.getElementById("lawn").style.filter = "blur(2px)";
+      document.getElementById("lawnActive").style.backgroundColor = "#E06733";
+      document.getElementById("lawnActive").style.color = "#FFFFFF";
+    } else {
+      document.getElementById("lawn").style.filter = "blur(0px)";
+      document.getElementById("lawnActive").style.backgroundColor = "#EDF2EC";
+      document.getElementById("lawnActive").style.color = "#E06733";
+    }
+
+    if (typeMenu === 'planting' && document.getElementById("planting").style.filter !== "blur(2px)") {
+      document.getElementById("planting").style.filter = "blur(2px)";
+      document.getElementById("planting1").style.filter = "blur(2px)";
+      document.getElementById("planting2").style.filter = "blur(2px)";
+      document.getElementById("plantingActive").style.backgroundColor = "#E06733";
+      document.getElementById("plantingActive").style.color = "#FFFFFF";
+    } else {
+      document.getElementById("planting").style.filter = "blur(0px)";
+      document.getElementById("planting1").style.filter = "blur(0px)";
+      document.getElementById("planting2").style.filter = "blur(0px)";
+      document.getElementById("plantingActive").style.backgroundColor = "#EDF2EC";
+      document.getElementById("plantingActive").style.color = "#E06733";
+    }
+  }
+
+  function openBasicMenu() {
+    let item1 = document.getElementById("basicPricesImage");
+    let item4 = document.getElementById("basicPriceBtn");
+    if (item1.style.transform === "rotate(180deg)") {
+      item1.style.transform = "rotate(360deg)";
+      item4.style.backgroundColor = "#EDF2EC";
+    } else {
+      item1.style.transform = "rotate(180deg)";
+      item4.style.backgroundColor = "#D6E7D2";
+    }
+  }
+
+  function openStandardMenu() {
+    let item1 = document.getElementById("standardPricesImage");
+    let item4 = document.getElementById("standardPriceBtn");
+    if (item1.style.transform === "rotate(180deg)") {
+      item1.style.transform = "rotate(360deg)";
+      item4.style.backgroundColor = "#EDF2EC";
+    } else {
+      item1.style.transform = "rotate(180deg)";
+      item4.style.backgroundColor = "#D6E7D2";
+    }
+  }
+
+  function openProMenu() {
+    let item1 = document.getElementById("proPricesImage");
+    let item4 = document.getElementById("proPriceBtn");
+    if (item1.style.transform === "rotate(180deg)") {
+      item1.style.transform = "rotate(360deg)";
+      item4.style.backgroundColor = "#EDF2EC";
+    } else {
+      item1.style.transform = "rotate(180deg)";
+      item4.style.backgroundColor = "#D6E7D2";
+    }
+  }
+
+  function openMenu() {
+    let menuBox = document.getElementById('mobileNavigationMenu');
+    if (menuBox.style.display === "block") {
+      menuBox.style.display = "none";
+    } else {
+      menuBox.style.display = "block";
+    }
+  }
+</script>
