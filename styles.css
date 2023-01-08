@@ -98,13 +98,10 @@ header {
   align-items: center;
 }
 
-.logo-wrapper img {
+.logo {
   height: 20px;
   width: 20px;
   margin-right: 5px;
-}
-
-.logo-wrapper img::before {
   content: url("img_0.png");
 }
 
